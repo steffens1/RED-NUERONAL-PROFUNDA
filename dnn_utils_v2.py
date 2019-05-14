@@ -20,10 +20,8 @@ def sigmoid(Z):
 def relu(Z):
     """
     Implement the RELU function.
-
     Arguments:
     Z -- Output of the linear layer, of any shape
-
     Returns:
     A -- Post-activation parameter, of the same shape as Z
     cache -- a python dictionary containing "A" ; stored for computing the backward pass efficiently
@@ -40,11 +38,9 @@ def relu(Z):
 def relu_backward(dA, cache):
     """
     Implement the backward propagation for a single RELU unit.
-
     Arguments:
     dA -- post-activation gradient, of any shape
     cache -- 'Z' where we store for computing backward propagation efficiently
-
     Returns:
     dZ -- Gradient of the cost with respect to Z
     """
@@ -62,11 +58,9 @@ def relu_backward(dA, cache):
 def sigmoid_backward(dA, cache):
     """
     Implement the backward propagation for a single SIGMOID unit.
-
     Arguments:
     dA -- post-activation gradient, of any shape
     cache -- 'Z' where we store for computing backward propagation efficiently
-
     Returns:
     dZ -- Gradient of the cost with respect to Z
     """
@@ -79,4 +73,3 @@ def sigmoid_backward(dA, cache):
     assert (dZ.shape == Z.shape)
     
     return dZ
-
